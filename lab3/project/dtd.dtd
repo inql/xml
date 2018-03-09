@@ -1,0 +1,70 @@
+<![%cale_dtd;[
+
+  <!ELEMENT klinika (info_klinika?,dyrektor,personel,pacjenci,wizyty)>
+  <!ATTLIST klinika nazwa NMTOKEN #REQUIRED>
+  <!ELEMENT dyrektor (dane_osobowe)>
+  <!ELEMENT personel (lekarze,pielegniarki)>
+  <!ELEMENT pacjenci (pacjent*)>
+  <!ELEMENT wizyty (konsultacja|zabieg|badanie)*>
+  <!ATTLIST dyrektor plec (m|k) #REQUIRED>
+  <!ELEMENT dane_osobowe (imie,nazwisko,data_urodzenia,pesel,adres,telefon+,email+)>
+  <!ELEMENT imie (%pc;)>
+  <!ELEMENT nazwisko (%pc;)>
+  <!ELEMENT data_urodzenia (dzien,miesiac,rok)>
+  <!ELEMENT dzien (%pc;)>
+  <!ELEMENT miesiac (%pc;)>
+  <!ELEMENT rok (%pc;)>
+  <!ELEMENT pesel (%pc;)>
+  <!ELEMENT adres (ulica,nr_domu,nr_mieszkania?,kod_pocztowy,miasto,kraj)>
+  <!ELEMENT ulica (%pc;)>
+  <!ELEMENT nr_domu (%pc;)>
+  <!ELEMENT nr_mieszkania (%pc;)>
+  <!ELEMENT kod_pocztowy (%pc;)>
+  <!ELEMENT miasto (%pc;)>
+  <!ELEMENT kraj EMPTY>
+  <!ATTLIST kraj kraj CDATA #FIXED "Polska">
+  <!ELEMENT telefon (%pc;)>
+  <!ELEMENT email (%pc;)>
+  <!ELEMENT lekarze (lekarz)*>
+  <!ELEMENT lekarz (dane_osobowe)>
+  <!ATTLIST lekarz plec (m|k) #REQUIRED id ID #REQUIRED>
+  <!ELEMENT pielegniarki (pielegniarka)*>
+  <!ELEMENT pielegniarka (dane_osobowe)>
+  <!ATTLIST pielegniarka plec (m|k) #REQUIRED id ID #REQUIRED>
+  <!ELEMENT pacjent (dane_osobowe,karta_pacjenta)>
+  <!ATTLIST pacjent plec (m|k) #REQUIRED id ID #REQUIRED>
+  <!ELEMENT karta_pacjenta (choroby,recepty)?>
+  <!ELEMENT choroby (choroba*)>
+  <!ELEMENT choroba (nazwa,rok,komentarz,wizyta)>
+  <!ELEMENT nazwa (%pc;)>
+  <!ELEMENT komentarz (%pc;)>
+  <!ELEMENT wizyta EMPTY>
+  <!ATTLIST wizyta id IDREF #REQUIRED>
+  <!ELEMENT recepty (recepta)*>
+  <!ELEMENT recepta (tresc)>
+  <!ELEMENT tresc (%pc;)>
+  <!ATTLIST recepta id IDREF #REQUIRED>
+  <!ELEMENT konsultacja (data,skierowanie?,wystawiona_recepta?)>
+  <!ATTLIST konsultacja id_lekarz IDREF #REQUIRED id_pacjent IDREF #REQUIRED id ID #REQUIRED>
+  <!ELEMENT data (dzien,miesiac,rok,godzina)>
+  <!ELEMENT godzina (%pc;)>
+  <!ELEMENT skierowanie EMPTY>
+  <!ATTLIST skierowanie id ID #IMPLIED>
+  <!ELEMENT wystawiona_recepta EMPTY>
+  <!ATTLIST wystawiona_recepta id ID #IMPLIED>
+  <!ELEMENT zabieg (data,opis)>
+  <!ATTLIST zabieg id_lekarz IDREF #REQUIRED id_pielegniarka IDREF #IMPLIED id ID #REQUIRED id_skierowanie IDREF #REQUIRED>
+  <!ELEMENT opis (%pc;)>
+  <!ELEMENT badanie (data,opis,wyniki)>
+  <!ATTLIST badanie id_lekarz IDREF #REQUIRED id_pielegniarka IDREF #IMPLIED id ID #REQUIRED id_skierowanie IDREF #REQUIRED>
+  <!ELEMENT wyniki (%pc;)>
+  <![%klinika_info;[
+    <!ELEMENT info_klinika (adres,zdjecie?,o_klinice)>
+    <!NOTATION JPG SYSTEM "image/jpeg">
+    <!NOTATION PNG SYSTEM "image/png">
+    <!ELEMENT zdjecie (podpis)>
+    <!ATTLIST zdjecie zdjecie NMTOKEN #IMPLIED rozszerzenie NOTATION (JPG|PNG) #IMPLIED>
+    <!ELEMENT podpis (%pc;)>
+    <!ELEMENT o_klinice (%pc;)>
+  ]]>
+]]>

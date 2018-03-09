@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE klinika[
+  <!ENTITY % dtd_source SYSTEM "dtd.dtd" >
+  <!ENTITY % pc "#PCDATA">
+  <!ENTITY % cale_dtd "INCLUDE">
+  <!ENTITY % klinika_info "INCLUDE">
+  <!ENTITY dyrektor_info SYSTEM "data.xml">
+  <!ENTITY pesel_num "94223144235">
+  %dtd_source;
+]>
+<klinika nazwa="clinic">
+  <info_klinika>
+    <adres>
+      <ulica></ulica>
+      <nr_domu></nr_domu>
+      <nr_mieszkania></nr_mieszkania>
+      <kod_pocztowy></kod_pocztowy>
+      <miasto></miasto>
+      <kraj kraj="Polska"/>
+    </adres>
+    <o_klinice></o_klinice>
+  </info_klinika>
+  <dyrektor plec="m">
+    &dyrektor_info;
+  </dyrektor>
+  <personel>
+    <lekarze>
+      <lekarz plec="m" id="l1">
+        <dane_osobowe>
+          <imie></imie>
+          <nazwisko></nazwisko>
+          <data_urodzenia>
+            <dzien></dzien>
+            <miesiac></miesiac>
+            <rok></rok>
+          </data_urodzenia>
+          <pesel>&pesel_num;</pesel>
+          <adres>
+            <ulica></ulica>
+            <nr_domu></nr_domu>
+            <nr_mieszkania></nr_mieszkania>
+            <kod_pocztowy></kod_pocztowy>
+            <miasto></miasto>
+            <kraj kraj="Polska"/>
+          </adres>
+          <telefon></telefon>
+          <email></email>
+        </dane_osobowe>
+      </lekarz>
+    </lekarze>
+    <pielegniarki>
+      <pielegniarka plec="k" id="p1">
+        <dane_osobowe>
+          <imie></imie>
+          <nazwisko></nazwisko>
+          <data_urodzenia>
+            <dzien></dzien>
+            <miesiac></miesiac>
+            <rok></rok>
+          </data_urodzenia>
+          <pesel></pesel>
+          <adres>
+            <ulica></ulica>
+            <nr_domu></nr_domu>
+            <nr_mieszkania></nr_mieszkania>
+            <kod_pocztowy></kod_pocztowy>
+            <miasto></miasto>
+            <kraj kraj="Polska"/>
+          </adres>
+          <telefon></telefon>
+          <email></email>
+        </dane_osobowe>
+      </pielegniarka>
+    </pielegniarki>
+  </personel>
+  <pacjenci>
+    <pacjent plec="m" id="a1">
+      <dane_osobowe>
+        <imie></imie>
+        <nazwisko></nazwisko>
+        <data_urodzenia>
+          <dzien></dzien>
+          <miesiac></miesiac>
+          <rok></rok>
+        </data_urodzenia>
+        <pesel></pesel>
+        <adres>
+          <ulica></ulica>
+          <nr_domu></nr_domu>
+          <nr_mieszkania></nr_mieszkania>
+          <kod_pocztowy></kod_pocztowy>
+          <miasto></miasto>
+          <kraj kraj="Polska"/>
+        </adres>
+        <telefon></telefon>
+        <email></email>
+      </dane_osobowe>
+      <karta_pacjenta>
+        <choroby>
+          <choroba>
+            <nazwa></nazwa>
+            <rok></rok>
+            <komentarz>
+            </komentarz>
+            <wizyta id="k1"/>
+          </choroba>
+        </choroby>
+        <recepty>
+          <recepta id="r1">
+            <tresc></tresc>
+          </recepta>
+        </recepty>
+      </karta_pacjenta>
+    </pacjent>
+  </pacjenci>
+  <wizyty>
+    <konsultacja id_lekarz="l1" id_pacjent="a1" id="k1">
+      <data>
+        <dzien></dzien>
+        <miesiac></miesiac>
+        <rok></rok>
+        <godzina></godzina>
+      </data>
+      <skierowanie id="s1"/>
+      <wystawiona_recepta id="r1"/>
+    </konsultacja>
+    <zabieg id_lekarz="l1" id_pielegniarka="p1" id="z1" id_skierowanie="s1">
+      <data>
+        <dzien></dzien>
+        <miesiac></miesiac>
+        <rok></rok>
+        <godzina></godzina>
+      </data>
+      <opis>
+      </opis>
+    </zabieg>
+    <badanie id_lekarz="l1" id_pielegniarka="p1" id="b1" id_skierowanie="s1">
+      <data>
+        <dzien></dzien>
+        <miesiac></miesiac>
+        <rok></rok>
+        <godzina></godzina>
+      </data>
+      <opis>
+      </opis>
+      <wyniki>
+      </wyniki>
+    </badanie>
+  </wizyty>
+</klinika>

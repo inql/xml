@@ -1,0 +1,20 @@
+<dane_osobowe>
+  <imie></imie>
+  <nazwisko></nazwisko>
+  <data_urodzenia>
+    <dzien></dzien>
+    <miesiac></miesiac>
+    <rok></rok>
+  </data_urodzenia>
+  <pesel></pesel>
+  <adres>
+    <ulica></ulica>
+    <nr_domu></nr_domu>
+    <nr_mieszkania></nr_mieszkania>
+    <kod_pocztowy></kod_pocztowy>
+    <miasto></miasto>
+    <kraj kraj="Polska"/>
+  </adres>
+  <telefon></telefon>
+  <email></email>
+</dane_osobowe>
