@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<systemy_operacyjne>
+  <tekstowe>
+    <system>
+      <dane_szczegolowe>
+        <nazwa>MSDOS</nazwa>
+        <data_powstania>1981</data_powstania>
+        <architektura>x86</architektura>
+      </dane_szczegolowe>
+      <platforma>
+        <typ_platformy>desktop</typ_platformy>
+      </platforma>
+      <producent>
+        <nazwa>Microsoft</nazwa>
+      </producent>
+    </system>
+  </tekstowe>
+  <graficzne>
+    <system>
+      <dane_szczegolowe>
+        <nazwa>MSDOS</nazwa>
+        <data_powstania>1981</data_powstania>
+        <architektura>x86</architektura>
+      </dane_szczegolowe>
+      <platforma>
+        <typ_platformy>desktop</typ_platformy>
+      </platforma>
+      <producent>
+        <nazwa>Microsoft</nazwa>
+      </producent>
+    </system>
+
+
+  </graficzne>
+</systemy_operacyjne>

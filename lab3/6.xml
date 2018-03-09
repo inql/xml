@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sklep[
+  <!ENTITY % dtd SYSTEM "6.dtd">
+  %dtd;
+]>
+<sklep>
+  <dzial>
+   <nazwa> Nazwa Działu </nazwa>
+   <dyrektor_działu> Nazwisko Dyrektora Działu </dyrektor_działu>
+	Tutaj jest jakiś luźny tekst o węźle dział.
+  </dzial>
+</sklep>

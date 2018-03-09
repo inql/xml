@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<przedszkole>
+  <dyrektor>
+    <imie>Adam</imie>
+    <nazwisko>Nowak</nazwisko>
+  </dyrektor>
+  <pracownik>
+    <imie>Jan</imie>
+    <nazwisko>Kowalski</nazwisko>
+    <rodzaj_pracownika>nauczyciel</rodzaj_pracownika>
+  </pracownik>
+  <pracownik>
+    <imie>Małgorzata</imie>
+    <nazwisko>Szpak</nazwisko>
+    <rodzaj_pracownika>nauczyciel specjalista</rodzaj_pracownika>
+  </pracownik>
+  <dziecko plec="M">
+    <imie>Krystian</imie>
+    <nazwisko>Karczyński</nazwisko>
+    <rok_urodzenia>2002</rok_urodzenia>
+    <imiona_rodzicow>
+      <imie_m>imiem</imie_m>
+      <imie_o>imieo</imie_o>
+    </imiona_rodzicow>
+    <adres_zamieszkania>
+      <ulica>jabłkowa</ulica>
+      <nr_domu>2</nr_domu>
+      <kod>14-222</kod>
+    </adres_zamieszkania>
+  </dziecko>
+  <dziecko plec="M">
+    <imie>Petr</imie>
+    <nazwisko>Cech</nazwisko>
+    <rok_urodzenia>2002</rok_urodzenia>
+    <imiona_rodzicow>
+      <imie_m>imiem</imie_m>
+      <imie_o>imieo</imie_o>
+    </imiona_rodzicow>
+    <adres_zamieszkania>
+      <ulica>jabłkowa</ulica>
+      <nr_domu>2</nr_domu>
+      <kod>14-222</kod>
+    </adres_zamieszkania>
+  </dziecko>
+  <dziecko plec="M">
+      <imie>Krystian</imie>
+      <nazwisko>Karczyński</nazwisko>
+      <rok_urodzenia>2002</rok_urodzenia>
+      <imiona_rodzicow>
+        <imie_m>imiem</imie_m>
+        <imie_o>imieo</imie_o>
+      </imiona_rodzicow>
+      <adres_zamieszkania>
+        <ulica>jabłkowa</ulica>
+        <nr_domu>2</nr_domu>
+        <kod>14-222</kod>
+      </adres_zamieszkania>
+      <plec>M</plec>
+    </dziecko>
+</przedszkole>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- struktktura osoba -->
+<osoba>
+    <imie> Jan </imie>
+    <nazwisko> Kowalski </nazwisko>
+    <wiek> 25 </wiek>
+</osoba>

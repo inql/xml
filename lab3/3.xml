@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE zamowienia[
+  <!ENTITY % pc "#PCDATA">
+  <!ENTITY % test "INCLUDE">
+    <!ELEMENT zamowienia (zamowienie*)>
+    <!ATTLIST zamowienie nr_zamowienia ID #REQUIRED>
+    <!ELEMENT zamowienie (adres_dostarczenia,adres_dostarczenia_faktury,artykuly)>
+    <!ATTLIST adres_dostarczenia termin CDATA #IMPLIED>
+    <!ELEMENT adres_dostarczenia (nazwa,ulica,kod_pocztowy,miasto,kraj)>
+    <!ELEMENT nazwa (#PCDATA)>
+    <!ELEMENT ulica (#PCDATA)>
+    <!ELEMENT kod_pocztowy (#PCDATA)>
+    <!ELEMENT miasto (#PCDATA)>
+    <!ELEMENT kraj EMPTY>
+    <!ATTLIST kraj kraj CDATA #FIXED "Polska">
+    <!ELEMENT adres_dostarczenia_faktury ((nazwa,ulica,kod_pocztowy,miasto,kraj)|(email))>
+    <!ELEMENT email (#PCDATA)>
+    <!ENTITY % artykuly SYSTEM "artykuly.dtd">
+    %artykuly;
+    <!ELEMENT cd (nazwa_albumu,wykonawca,wydawca,rok_wydania,czas_trwania?)>
+    <!ELEMENT nazwa_albumu (#PCDATA)>
+    <!ELEMENT wykonawca (#PCDATA)>
+    <!ELEMENT czas_trwania (#PCDATA)>
+    <!ELEMENT wydawca (#PCDATA)>
+    <!ELEMENT dvd (tytul,rezyser,(wytworca|dystrybutor),rok_premiery,czas_trwania?)>
+    <!ELEMENT rezyser (#PCDATA)>
+    <!ELEMENT wytworca (#PCDATA)>
+    <!ELEMENT dystrybutor (#PCDATA)>
+    <!ELEMENT rok_premiery (#PCDATA)>
+    <!ENTITY data SYSTEM "3_data.xml">
+]>
+<zamowienia>
+  &data;
+  <zamowienie nr_zamowienia="z2">
+    <adres_dostarczenia termin="">
+      <nazwa></nazwa>
+      <ulica></ulica>
+      <kod_pocztowy></kod_pocztowy>
+      <miasto></miasto>
+      <kraj kraj="Polska"></kraj>
+    </adres_dostarczenia>
+    <adres_dostarczenia_faktury>
+      <email></email>
+    </adres_dostarczenia_faktury>
+    <artykuly>
+      <artykul identyfikator="a2">
+        <cd>
+          <nazwa_albumu></nazwa_albumu>
+          <wykonawca></wykonawca>
+          <wydawca></wydawca>
+          <rok_wydania></rok_wydania>
+          <czas_trwania></czas_trwania>
+        </cd>
+      </artykul>
+    </artykuly>
+  </zamowienie>
+  <zamowienie nr_zamowienia="z3">
+    <adres_dostarczenia termin="">
+      <nazwa></nazwa>
+      <ulica></ulica>
+      <kod_pocztowy></kod_pocztowy>
+      <miasto></miasto>
+      <kraj kraj="Polska"></kraj>
+    </adres_dostarczenia>
+    <adres_dostarczenia_faktury>
+      <nazwa></nazwa>
+      <ulica></ulica>
+      <kod_pocztowy></kod_pocztowy>
+      <miasto></miasto>
+      <kraj kraj="Polska"></kraj>
+    </adres_dostarczenia_faktury>
+    <artykuly>
+      <artykul identyfikator="a3">
+        <dvd>
+          <tytul></tytul>
+          <rezyser></rezyser>
+          <dystrybutor></dystrybutor>
+          <rok_premiery></rok_premiery>
+          <czas_trwania></czas_trwania>
+        </dvd>
+      </artykul>
+    </artykuly>
+  </zamowienie>
+</zamowienia>

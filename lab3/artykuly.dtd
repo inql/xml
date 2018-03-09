@@ -1,0 +1,12 @@
+<![%test;[
+<!ELEMENT artykuly (artykul+)>
+<!ELEMENT artykul (ksiazka|cd|dvd)>
+<!ATTLIST artykul identyfikator ID #REQUIRED>
+<!ELEMENT ksiazka (tytul,autor,nazwa_wydawnictwa,rok_wydania,numer_wydania,isbn)>
+<!ELEMENT tytul (%pc;)>
+<!ELEMENT autor (%pc;)>
+<!ELEMENT nazwa_wydawnictwa (%pc;)>
+<!ELEMENT rok_wydania (%pc;)>
+<!ELEMENT numer_wydania (%pc;)>
+<!ELEMENT isbn (%pc;)>
+]]>

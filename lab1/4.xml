@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hotel>
+  <wlasciciel plec="M">
+    <imie>Adam</imie>
+    <nazwisko>Abacki</nazwisko>
+    <data_ur>
+      <dzien>11</dzien>
+      <miesiac>12</miesiac>
+      <rok>1960</rok>
+    </data_ur>
+  </wlasciciel>
+  <personel>
+    <pracownik plec="K">
+      <imie>Barbara</imie>
+      <nazwisko>Babacka</nazwisko>
+      <data_ur>
+        <dzien>4</dzien>
+        <miesiac>4</miesiac>
+        <rok>1996</rok>
+      </data_ur>
+      <pesel>123456789</pesel>
+      <nr_ubezpieczenia>212141541254124</nr_ubezpieczenia>
+      <typ_pracownika>Recepcjonista</typ_pracownika>
+      <pensja>
+        <kwota>2500</kwota>
+        <waluta>PLN</waluta>
+      </pensja>
+    </pracownik>
+    <pracownik plec="M">
+      <imie>Cezary</imie>
+      <nazwisko>Cabacki</nazwisko>
+      <data_ur>
+        <dzien>1</dzien>
+        <miesiac>1</miesiac>
+        <rok>1995</rok>
+      </data_ur>
+      <pesel>9875654321</pesel>
+      <nr_ubezpieczenia>141241241251</nr_ubezpieczenia>
+      <typ_pracownika>Hydraulik</typ_pracownika>
+      <pensja>
+        <kwota>2100</kwota>
+        <waluta>PLN</waluta>
+      </pensja>
+    </pracownik>
+    <pracownik plec="M">
+      <imie>Dawid</imie>
+      <nazwisko>Dabacki</nazwisko>
+      <data_ur>
+        <dzien>2</dzien>
+        <miesiac>4</miesiac>
+        <rok>1977</rok>
+      </data_ur>
+      <pesel>2468012467</pesel>
+      <nr_ubezpieczenia>141241241251</nr_ubezpieczenia>
+      <typ_pracownika>Szef kuchni</typ_pracownika>
+      <pensja>
+        <kwota>3000</kwota>
+        <waluta>PLN</waluta>
+      </pensja>
+    </pracownik>
+    <pracownik plec="K">
+      <imie>Halina</imie>
+      <nazwisko>Habacka</nazwisko>
+      <data_ur>
+        <dzien>24</dzien>
+        <miesiac>11</miesiac>
+        <rok>1988</rok>
+      </data_ur>
+      <pesel>24531211334</pesel>
+      <nr_ubezpieczenia>141241241251</nr_ubezpieczenia>
+      <typ_pracownika>Kucharz</typ_pracownika>
+      <pensja>
+        <kwota>2000</kwota>
+        <waluta>PLN</waluta>
+      </pensja>
+    </pracownik>
+    <pracownik plec="K">
+      <imie>Janina</imie>
+      <nazwisko>Jabacka</nazwisko>
+      <data_ur>
+        <dzien>2</dzien>
+        <miesiac>3</miesiac>
+        <rok>1977</rok>
+      </data_ur>
+      <pesel>12345678945</pesel>
+      <nr_ubezpieczenia>54654646549816</nr_ubezpieczenia>
+      <typ_pracownika>Konserwator powierzchni płaskich</typ_pracownika>
+      <pensja>
+        <kwota>1800</kwota>
+        <waluta>PLN</waluta>
+      </pensja>
+    </pracownik>
+    <pracownik plec="M">
+      <imie>Marek</imie>
+      <nazwisko>Mostowiak</nazwisko>
+      <data_ur>
+        <dzien>22</dzien>
+        <miesiac>3</miesiac>
+        <rok>1955</rok>
+      </data_ur>
+      <pesel>54678965321</pesel>
+      <nr_ubezpieczenia>879812984984</nr_ubezpieczenia>
+      <typ_pracownika>Kelner</typ_pracownika>
+      <pensja>
+        <kwota>2200</kwota>
+        <waluta>PLN</waluta>
+      </pensja>
+    </pracownik>
+  </personel>
+  <klienci>
+    <klient plec="M">
+      <imie>Michal</imie>
+      <nazwisko>Mabacki</nazwisko>
+      <data_ur>
+        <dzien>11</dzien>
+        <miesiac>2</miesiac>
+        <rok>1988</rok>
+      </data_ur>
+      <pesel>78965412354</pesel>
+    </klient>
+  </klienci>
+  <pokoje>
+    <pokoj>
+      <numer>125</numer>
+      <metraz>30</metraz>
+      <standard>Wysoki</standard>
+      <cena>
+        <kwota>200</kwota>
+        <waluta>PLN</waluta>
+      </cena>
+    </pokoj>
+  </pokoje>
+  <uslugi>
+    <usluga>
+      <nazwa>Masaż</nazwa>
+        <cena>
+          <kwota>50</kwota>
+          <waluta>PLN</waluta>
+        </cena>
+    </usluga>
+  </uslugi>
+</hotel>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pliki[
+  <!ELEMENT pliki (plik*)>
+  <!ELEMENT plik (nazwa,data_modyfikacji,rozmiar,ilosc_dowiazan,nazwa_uzytkownika,nazwa_grupy,prawa_dostepu)>
+  <!ATTLIST plik typ NMTOKEN #REQUIRED>
+  <!ELEMENT nazwa (#PCDATA)>
+  <!ELEMENT data_modyfikacji (dzien,miesiac,rok)>
+  <!ELEMENT dzien (#PCDATA)>
+  <!ELEMENT miesiac (#PCDATA)>
+  <!ELEMENT rok (#PCDATA)>
+  <!ELEMENT rozmiar (#PCDATA)>
+  <!ELEMENT ilosc_dowiazan (#PCDATA)>
+  <!ELEMENT nazwa_uzytkownika (#PCDATA)>
+  <!ELEMENT nazwa_grupy (#PCDATA)>
+  <!ELEMENT prawa_dostepu (wlasciciel,grupa,pozostali)>
+  <!ELEMENT wlasciciel (#PCDATA)>
+  <!ELEMENT grupa (#PCDATA)>
+  <!ELEMENT pozostali (#PCDATA)>
+]>
+<!-- struktktura pliki -->
+<pliki>
+  <plik typ="f">
+    <nazwa></nazwa>
+    <data_modyfikacji>
+      <dzien></dzien>
+      <miesiac></miesiac>
+      <rok></rok>
+    </data_modyfikacji>
+    <rozmiar></rozmiar>
+    <ilosc_dowiazan></ilosc_dowiazan>
+    <nazwa_uzytkownika></nazwa_uzytkownika>
+    <nazwa_grupy></nazwa_grupy>
+    <prawa_dostepu>
+      <wlasciciel></wlasciciel>
+      <grupa></grupa>
+      <pozostali></pozostali>
+    </prawa_dostepu>
+  </plik>
+  <plik typ="a">
+    <nazwa></nazwa>
+    <data_modyfikacji>
+      <dzien></dzien>
+      <miesiac></miesiac>
+      <rok></rok>
+    </data_modyfikacji>
+    <rozmiar></rozmiar>
+    <ilosc_dowiazan></ilosc_dowiazan>
+    <nazwa_uzytkownika></nazwa_uzytkownika>
+    <nazwa_grupy></nazwa_grupy>
+    <prawa_dostepu>
+      <wlasciciel></wlasciciel>
+      <grupa></grupa>
+      <pozostali></pozostali>
+    </prawa_dostepu>
+  </plik>
+</pliki>

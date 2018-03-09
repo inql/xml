@@ -1,0 +1,4 @@
+<!ELEMENT sklep (dzial)+>
+<!ELEMENT dzial (#PCDATA|nazwa|dyrektor_działu)*>
+<!ELEMENT nazwa (#PCDATA)>
+<!ELEMENT dyrektor_działu (#PCDATA)>

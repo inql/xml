@@ -1,0 +1,28 @@
+<zamowienie nr_zamowienia="z1">
+  <adres_dostarczenia termin="">
+    <nazwa></nazwa>
+    <ulica></ulica>
+    <kod_pocztowy></kod_pocztowy>
+    <miasto></miasto>
+    <kraj kraj="Polska"></kraj>
+  </adres_dostarczenia>
+  <adres_dostarczenia_faktury>
+    <nazwa></nazwa>
+    <ulica></ulica>
+    <kod_pocztowy></kod_pocztowy>
+    <miasto></miasto>
+    <kraj kraj="Polska"></kraj>
+  </adres_dostarczenia_faktury>
+  <artykuly>
+    <artykul identyfikator="a1">
+      <ksiazka>
+        <tytul>  </tytul>
+        <autor>    </autor>
+        <nazwa_wydawnictwa>    </nazwa_wydawnictwa>
+        <rok_wydania></rok_wydania>
+        <numer_wydania></numer_wydania>
+        <isbn></isbn>
+      </ksiazka>
+    </artykul>
+  </artykuly>
+</zamowienie>

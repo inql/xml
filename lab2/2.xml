@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE pracownicy[
+  <!ELEMENT pracownicy (dzial-spozywczy, dzial-chemiczny)>
+  <!ELEMENT dzial-spozywczy (pracownik*)>
+  <!ATTLIST dzial-spozywczy numer ID #REQUIRED>
+  <!ELEMENT dzial-chemiczny (pracownik*)>
+  <!ATTLIST dzial-chemiczny numer ID #REQUIRED>
+  <!ELEMENT pracownik (imie,nazwisko,data_zatr)>
+  <!ATTLIST pracownik plec (m|k) #REQUIRED dzial IDREF #REQUIRED>
+  <!ELEMENT imie (#PCDATA)>
+  <!ELEMENT nazwisko (#PCDATA)>
+  <!ELEMENT data_zatr (#PCDATA)>
+  <!ENTITY n "Nowak">
+  <!ENTITY cn "bla bla &n;">
+]>
+<pracownicy>
+  <dzial-spozywczy numer="a1">
+      <pracownik plec="m" dzial="a1">
+        <imie>
+          Michał
+        </imie>
+        <nazwisko>
+          &cn;
+        </nazwisko>
+
+        <data_zatr>
+          10-01-2009
+        </data_zatr>
+      </pracownik>
+      <pracownik plec="k" dzial="a1">
+        <imie>
+          Anna
+        </imie>
+        <nazwisko>
+          Lipiec
+        </nazwisko>
+
+        <data_zatr>
+          04-12-2007
+        </data_zatr>
+      </pracownik>
+
+    </dzial-spozywczy>
+
+    <dzial-chemiczny numer="a2">
+      <pracownik plec="k" dzial="a2">
+        <imie>
+          Marta
+        </imie>
+        <nazwisko>
+          Malinowska
+        </nazwisko>
+
+        <data_zatr>
+          23-06-2005
+        </data_zatr>
+      </pracownik>
+
+    </dzial-chemiczny>
+
+  </pracownicy>
