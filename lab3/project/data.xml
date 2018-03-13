@@ -1,20 +1,20 @@
 <dane_osobowe>
-  <imie></imie>
-  <nazwisko></nazwisko>
+  <imie>Andrzej</imie>
+  <nazwisko>Andrzej</nazwisko>
   <data_urodzenia>
-    <dzien></dzien>
-    <miesiac></miesiac>
-    <rok></rok>
+    <dzien>12</dzien>
+    <miesiac>02</miesiac>
+    <rok>1984</rok>
   </data_urodzenia>
-  <pesel></pesel>
+  <pesel>12345678901</pesel>
   <adres>
-    <ulica></ulica>
-    <nr_domu></nr_domu>
-    <nr_mieszkania></nr_mieszkania>
-    <kod_pocztowy></kod_pocztowy>
-    <miasto></miasto>
+    <ulica>Słonecznikowa</ulica>
+    <nr_domu>2</nr_domu>
+    <nr_mieszkania>1</nr_mieszkania>
+    <kod_pocztowy>11-200</kod_pocztowy>
+    <miasto>Bartoszyce</miasto>
     <kraj kraj="Polska"/>
   </adres>
-  <telefon></telefon>
-  <email></email>
+  <telefon>516235124</telefon>
+  <email>dyrektor@clinic.eu</email>
 </dane_osobowe>

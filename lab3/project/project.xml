@@ -11,14 +11,13 @@
 <klinika nazwa="clinic">
   <info_klinika>
     <adres>
-      <ulica></ulica>
-      <nr_domu></nr_domu>
-      <nr_mieszkania></nr_mieszkania>
-      <kod_pocztowy></kod_pocztowy>
-      <miasto></miasto>
+      <ulica>Pomarańczowa</ulica>
+      <nr_domu>2</nr_domu>
+      <kod_pocztowy>11-200</kod_pocztowy>
+      <miasto>Bartoszyce</miasto>
       <kraj kraj="Polska"/>
     </adres>
-    <o_klinice></o_klinice>
+    <o_klinice>Super klinika</o_klinice>
   </info_klinika>
   <dyrektor plec="m">
     &dyrektor_info;
@@ -27,48 +26,47 @@
     <lekarze>
       <lekarz plec="m" id="l1">
         <dane_osobowe>
-          <imie></imie>
-          <nazwisko></nazwisko>
+          <imie>Michał</imie>
+          <nazwisko>Lekarz</nazwisko>
           <data_urodzenia>
-            <dzien></dzien>
-            <miesiac></miesiac>
-            <rok></rok>
+            <dzien>15</dzien>
+            <miesiac>04</miesiac>
+            <rok>1991</rok>
           </data_urodzenia>
           <pesel>&pesel_num;</pesel>
           <adres>
-            <ulica></ulica>
-            <nr_domu></nr_domu>
-            <nr_mieszkania></nr_mieszkania>
-            <kod_pocztowy></kod_pocztowy>
-            <miasto></miasto>
+            <ulica>Szrajbera</ulica>
+            <nr_domu>2</nr_domu>
+            <nr_mieszkania>1</nr_mieszkania>
+            <kod_pocztowy>11-111</kod_pocztowy>
+            <miasto>Gdańsk</miasto>
             <kraj kraj="Polska"/>
           </adres>
-          <telefon></telefon>
-          <email></email>
+          <telefon>234125125</telefon>
+          <email>doc@clinic.eu</email>
         </dane_osobowe>
       </lekarz>
     </lekarze>
     <pielegniarki>
       <pielegniarka plec="k" id="p1">
         <dane_osobowe>
-          <imie></imie>
-          <nazwisko></nazwisko>
+          <imie>Janina</imie>
+          <nazwisko>Wyszogrodzka</nazwisko>
           <data_urodzenia>
-            <dzien></dzien>
-            <miesiac></miesiac>
-            <rok></rok>
+            <dzien>11</dzien>
+            <miesiac>11</miesiac>
+            <rok>1978</rok>
           </data_urodzenia>
-          <pesel></pesel>
+          <pesel>78111131246</pesel>
           <adres>
-            <ulica></ulica>
-            <nr_domu></nr_domu>
-            <nr_mieszkania></nr_mieszkania>
-            <kod_pocztowy></kod_pocztowy>
-            <miasto></miasto>
+            <ulica>Kamienna</ulica>
+            <nr_domu>1</nr_domu>
+            <kod_pocztowy>11-111</kod_pocztowy>
+            <miasto>Gdańsk</miasto>
             <kraj kraj="Polska"/>
           </adres>
-          <telefon></telefon>
-          <email></email>
+          <telefon>512415235</telefon>
+          <email>nurse@clinic.eu</email>
         </dane_osobowe>
       </pielegniarka>
     </pielegniarki>
@@ -76,38 +74,39 @@
   <pacjenci>
     <pacjent plec="m" id="a1">
       <dane_osobowe>
-        <imie></imie>
-        <nazwisko></nazwisko>
+        <imie>Janusz</imie>
+        <nazwisko>Król</nazwisko>
         <data_urodzenia>
-          <dzien></dzien>
-          <miesiac></miesiac>
-          <rok></rok>
+          <dzien>2</dzien>
+          <miesiac>2</miesiac>
+          <rok>1997</rok>
         </data_urodzenia>
-        <pesel></pesel>
+        <pesel>97020286718</pesel>
         <adres>
-          <ulica></ulica>
-          <nr_domu></nr_domu>
-          <nr_mieszkania></nr_mieszkania>
-          <kod_pocztowy></kod_pocztowy>
-          <miasto></miasto>
+          <ulica>Miłosza</ulica>
+          <nr_domu>2</nr_domu>
+          <nr_mieszkania>32</nr_mieszkania>
+          <kod_pocztowy>11-111</kod_pocztowy>
+          <miasto>Gdańsk</miasto>
           <kraj kraj="Polska"/>
         </adres>
-        <telefon></telefon>
-        <email></email>
+        <telefon>321424524</telefon>
+        <email>pacjent@clinic.eu</email>
       </dane_osobowe>
       <karta_pacjenta>
         <choroby>
           <choroba>
-            <nazwa></nazwa>
-            <rok></rok>
+            <nazwa>Grypa</nazwa>
+            <rok>2000</rok>
             <komentarz>
+              Wyleczono
             </komentarz>
             <wizyta id="k1"/>
           </choroba>
         </choroby>
         <recepty>
           <recepta id="r1">
-            <tresc></tresc>
+            <tresc>Leki na grype coś tam</tresc>
           </recepta>
         </recepty>
       </karta_pacjenta>
@@ -116,34 +115,37 @@
   <wizyty>
     <konsultacja id_lekarz="l1" id_pacjent="a1" id="k1">
       <data>
-        <dzien></dzien>
-        <miesiac></miesiac>
-        <rok></rok>
-        <godzina></godzina>
+        <dzien>2</dzien>
+        <miesiac>2</miesiac>
+        <rok>2000</rok>
+        <godzina>14:15</godzina>
       </data>
       <skierowanie id="s1"/>
       <wystawiona_recepta id="r1"/>
     </konsultacja>
     <zabieg id_lekarz="l1" id_pielegniarka="p1" id="z1" id_skierowanie="s1">
       <data>
-        <dzien></dzien>
-        <miesiac></miesiac>
-        <rok></rok>
-        <godzina></godzina>
+        <dzien>15</dzien>
+        <miesiac>02</miesiac>
+        <rok>2000</rok>
+        <godzina>11:00</godzina>
       </data>
       <opis>
+        Sprawdzenie coś tam
       </opis>
     </zabieg>
     <badanie id_lekarz="l1" id_pielegniarka="p1" id="b1" id_skierowanie="s1">
       <data>
-        <dzien></dzien>
-        <miesiac></miesiac>
-        <rok></rok>
-        <godzina></godzina>
+        <dzien>11</dzien>
+        <miesiac>11</miesiac>
+        <rok>2001</rok>
+        <godzina>08:00</godzina>
       </data>
       <opis>
+        Sprawdzenie czy nie ma nawrotów
       </opis>
       <wyniki>
+        OK
       </wyniki>
     </badanie>
   </wizyty>
