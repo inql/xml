@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:complexType name="adres">
+        <xsd:sequence>
+          <xsd:element name="ulica" type="xsd:string"/>
+          <xsd:element name="miasto" type="xsd:string"/>
+          <xsd:choice>
+            <xsd:element name="stan" type="xsd:string"/>
+            <xsd:element name="wojewodztwo" type="xsd:string"/>
+          </xsd:choice>
+          <xsd:element name="kod" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+        <xsd:complexType name="book">
+          <xsd:all>
+            <xsd:element name="title" type="xsd:string"/>
+            <xsd:element name="author" type="xsd:string"/>
+            <xsd:element name="type" type="xsd:string"/>
+            <xsd:element name="published" type="xsd:date"/>
+            <xsd:element name="rating" type="xsd:decimal" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="notes" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+          </xsd:all>
+        </xsd:complexType>
+        <xsd:element name ="nr_dowodu">
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:pattern value="[A-Z]{3}[0-9]{6}"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:simpleType name="kody">
+          <xsd:restriction base="xsd:string">
+            <xsd:whiteSpace value="preserve"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+        <xsd:simpleType name="jezyki">
+          <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="C"/>
+            <xsd:enumeration value="C++"/>
+            <xsd:enumeration value="Java"/>
+            <xsd:enumeration value="Python"/>
+            <xsd:enumeration value="Ruby"/>
+
+          </xsd:restriction>
+        </xsd:simpleType>
+</xsd:schema>

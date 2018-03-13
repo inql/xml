@@ -1,0 +1,6 @@
+<adres xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="plik.xsd">
+  <ulica>Krotka 1</ulica>
+  <miejscowosc>Gdansk</miejscowosc>
+  <kod>11-111</kod>
+</adres>

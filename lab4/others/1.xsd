@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:element name="nazwa" type="xsd:string"/>
+      <xsd:complexType name="adres">
+        <xsd:sequence>
+          <xsd:element name="ulica" type="xsd:string"/>
+          <xsd:element name="miasto" type="xsd:string"/>
+          <xsd:element name="kod" type="xsd:string"/>
+          </xsd:sequence>
+          <xsd:attribute name = "adres_dom_lub_nie" type="xsd:string"/>
+        </xsd:complexType>
+</xsd:schema>
